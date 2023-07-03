@@ -7,6 +7,7 @@ void main() async {
   var sum = await sumStream(stream);
   print(sum);
 
+
   // 예제 진행을 위한 주석 처리 ↓
   // runApp(const MyApp());
 }
