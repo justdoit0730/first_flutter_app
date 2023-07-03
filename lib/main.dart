@@ -2,31 +2,19 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'dart:async';
 
-void main() async {
-  var stream = countStream(10);
-  var sum = await sumStream(stream);
-  print(sum);
+void main()  {
+  for(int i =2; i<10; i++){
+    for(int y=1; y<10; y++){
+      print('$i * $y = ${i*y}');
+    }
+  }
 
 
   // 예제 진행을 위한 주석 처리 ↓
   // runApp(const MyApp());
 }
 
-Stream<int> countStream(int to) async*{
-  for(int i=1; i<=to; i++){
-    print('countStream : $i');
-    yield i;
-  }
-}
 
-Future<int> sumStream(Stream<int> stream) async{
-  var sum=0;
-  await for(var value in stream){
-    print('sumStream : $value');
-    sum +=value;
-  }
-  return sum;
-}
 
 
 
