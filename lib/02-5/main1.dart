@@ -8,8 +8,6 @@ void main1 ()  {
       print('$i * $y = ${i*y}');
     }
   }
-
-
   // 예제 진행을 위한 주석 처리 ↓
   // runApp(const MyApp());
 }
