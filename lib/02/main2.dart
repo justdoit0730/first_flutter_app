@@ -1,6 +1,3 @@
-import 'package:flutter/material.dart';
-import 'dart:convert';
-import 'dart:async';
 
 void main ()  {
   Car bmw = Car(320, 100000, 'BMW');
