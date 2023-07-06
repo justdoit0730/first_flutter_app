@@ -11,5 +11,5 @@ void main ()  {
   ramdomList.add(random.nextInt(45)+1);
   }
 
- print(ramdomList);
+  print(ramdomList);
 }
